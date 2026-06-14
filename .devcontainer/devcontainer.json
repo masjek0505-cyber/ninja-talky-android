@@ -1,0 +1,6 @@
+{
+  "name": "Android Build Box",
+  "image": "mcr.microsoft.com/devcontainers/android:1-34",
+  "features": {"ghcr.io/devcontainers/features/java:1": {"version": "17"}},
+  "postCreateCommand": "yes | sdkmanager --licenses && sdkmanager 'platform-tools' 'platforms;android-34' 'build-tools;34.0.0'"
+}
